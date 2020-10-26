@@ -1,7 +1,10 @@
-Role Name
+ansible-arch-bluetooth-keyboard
 =========
+[![Build Status](https://travis-ci.com/MayNiklas/ansible-arch-bluetooth-keyboard.svg?branch=main)](https://travis-ci.com/MayNiklas/ansible-arch-bluetooth-keyboard)
 
-A brief description of the role goes here.
+- installs bluez & bluez-utils
+- enables AutoEnable=true in /etc/bluetooth/main.conf
+-> makes sure that my bluetooth keyboard gets reconnected before login
 
 Requirements
 ------------
