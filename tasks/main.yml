@@ -1,2 +1,9 @@
 ---
 # tasks file for ansible-arch-bluetooth-keyboard
+
+- name: Install required packages
+  become: yes
+  pacman: 
+    name={{ item }} 
+    state=latest
+  loop: [ 'bluez', 'bluez-utils' ]
