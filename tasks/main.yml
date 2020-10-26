@@ -7,3 +7,12 @@
     name={{ item }} 
     state=latest
   loop: [ 'bluez', 'bluez-utils' ]
+
+
+  # AutoEnable defines option to enable all controllers when they are found.
+- name: bluetooth AutoEnable=true
+  become: yes
+  lineinfile:
+    dest: /etc/bluetooth/main.conf
+    regexp: '#?AutoEnable='
+    line: 'AutoEnable=true'
