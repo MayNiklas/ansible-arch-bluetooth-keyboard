@@ -2,9 +2,9 @@ ansible-arch-bluetooth-keyboard
 =========
 [![Build Status](https://travis-ci.com/MayNiklas/ansible-arch-bluetooth-keyboard.svg?branch=main)](https://travis-ci.com/MayNiklas/ansible-arch-bluetooth-keyboard)
 
+-> makes sure that my bluetooth keyboard gets reconnected before login
 - installs bluez & bluez-utils
 - enables AutoEnable=true in /etc/bluetooth/main.conf
--> makes sure that my bluetooth keyboard gets reconnected before login
 
 Requirements
 ------------
